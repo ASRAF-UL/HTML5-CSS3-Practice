@@ -1,0 +1,152 @@
+/*external css*/
+h1{
+	background-color:yellow;/*background color*/
+	font-family:Tahoma;/*font family*/
+	font-weight:800;/*weather bold or not*/
+	font-style:italic;/*style of the font*/
+	font-size:25px;/*font size*/
+}
+p{
+	color:blue;
+}
+h2{
+	background-color:green;
+	/*padding-top:20px;
+	padding-bottom:10px;
+	padding-left:25px;
+	padding-right:30px;
+	padding rule padding:top right bottom left*/
+	padding:10px 20px 30px 40px;
+	/*border:size style color*/
+	border-style:solid;
+	border-width:5px;
+	border-color:blue;
+	/*margin:top right bottom left*/
+	margin:50px;
+}
+body{
+	margin:25px;
+	padding:0px;
+}
+/*div{
+	text-align:center;
+	background-color:#200000;
+	padding:10px 20px;
+	margin:20px;
+	border:5px solid yellow;
+	fond-family:Arial;
+	
+}
+div{
+	height:200px;
+	width:200px;
+	background-image:url(bkimage.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.new{
+	background-color:red;
+}
+#par{
+	background-color:green;
+}*/
+.new p{
+	background-color:red;
+	color:green;
+}
+.newa p{
+	background-color:grey;
+	color:yellow;
+}
+a{
+	color:green;
+	text-decoration:none;
+}
+a:hover{
+	color:red;
+	text-decoration:underline;
+}
+a:active{
+	color:orange;
+	text-decoration:underline;
+}
+a:visited{
+	color:grey;
+	text-decoration:none;
+}
+#ab ul{
+	list-style-type:katakana;
+}
+.rounded-box{
+	background-color:orange;
+	width:200px;
+	text-align:center;
+	padding:50px 0px;
+	border-radius:50px;
+	background-image:linear-gradient(to bottom, #04507b 30%, #0072b4, #018ad9, #00a2ff);
+	/*linear gradient makes the color more charming*/
+}
+
+
+.pic{
+	float:left;
+}
+#par2{
+	clear:both;
+}
+.left-column{
+	float:left;
+	background-color:blue;
+	height:200px;
+	width:200px;
+	color:white;
+	text-align:center;
+	margin:5px;
+}
+.mid-column{
+	float:left;
+	background-color:red;
+	height:200px;
+	width:200px;
+	color:white;
+	text-align:center;
+	margin:5px;
+}
+.right-column{
+	float:left;
+	background-color:green;
+	height:200px;
+	width:200px;
+	color:white;
+	text-align:center;
+	margin:5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
