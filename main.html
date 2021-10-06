@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $.ajax({
+        url: "http://192.168.0.129:9000/image-path",
+        success: function (data) {
+
+          console.log('Extracted data: ', data);
+          replacedFilename = data.replace("/static/Output/", "").replace(".jpeg", "");
+          $("#image-container").append("<img src='" + data + "'>");
+        }
+      });
+    });
+  </script>
+  <style type="text/css">
+    .image-container {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    .next-btn {
+      height: 45px;
+      width: 150px;
+      background: grey;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .right-btn {
+      height: 45px;
+      width: 150px;
+      background: green;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .wrong-btn {
+      height: 45px;
+      width: 150px;
+      background: red;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .next-btn:hover {
+      background-color: yellow;
+    }
+
+    .right-btn:hover {
+      background-color: grey;
+    }
+
+    .wrong-btn:hover {
+      background-color: grey;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btn-div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  </style>
+</head>
+
+<body>
+  <form method="post" action="/">
+    <!-- <button class="next-btn" type="submit" value="next" name="Next">Next</button> -->
+    <div id="image-container">
+      <h3>Rendered Image</h3>
+    </div>
+    <div class="btn-div">
+      <button class="right-btn" type="submit" value="right" name="Right">Right</button>
+      <button class="wrong-btn" type="submit" value="wrong" name="Wrong">Wrong</button>
+    </div>
+  </form>
+</body>
+
+
+</html>
